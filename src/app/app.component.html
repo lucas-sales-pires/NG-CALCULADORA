@@ -1,12 +1,13 @@
-<div id="cabecalho">
-  <h1>{{titulo}}</h1>
+<div>
+  <h1 class="text-center">Calculadora Angular</h1>
+  <app-teclado></app-teclado>
 
 </div>
 <hr>
-<div id="corpo">
-  <app-teclado></app-teclado>
+<div class="text-center">
   <app-botaoif></app-botaoif>
-
-  <app-sobre *ngIf = "mostrarSobre"></app-sobre>
+  <div class="text-center w-full ">
+  <app-sobre *ngIf = "mostrarSobre" ></app-sobre>
+  </div>
 </div>
 <hr>

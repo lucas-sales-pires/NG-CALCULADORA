@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { setTheme } from 'ngx-bootstrap/utils';
-import { ValidacaoService } from '../../validacao.service';
+import { ValidacaoService } from '../../services/validar/validacao.service';
 
 
 @Component({
@@ -10,28 +9,29 @@ import { ValidacaoService } from '../../validacao.service';
 })
 export class TecladoComponent implements OnInit {
 
-  public resultado:string = '';
+  public resultadoAtual:string = '';
 
   constructor(private validacao:ValidacaoService) { 
-    setTheme('bs4');
   }
 
   ngOnInit(): void {
   }
 
-  public preencheResultado(caractere:string){
-    if(this.validacao.ehValidaExpressao(caractere, this.resultado)){
-      this.resultado += caractere;
+  resultado(caractere:string){
+    if(this.validacao.validarExpressao(caractere, this.resultadoAtual)){
+      this.resultadoAtual += caractere;
     }
   }
 
   
-  public limpar(){
-    this.resultado="";
+  limpar(){
+    this.resultadoAtual = "";
   }
 
-  public avaliaResultado(){
-    this.resultado = eval(this.resultado +"");
+  resultadoFinal() {
+      this.resultadoAtual = new Function('return ' + this.resultadoAtual)();
+
   }
+  
 }
 

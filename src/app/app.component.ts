@@ -1,6 +1,5 @@
 import { Component, effect} from '@angular/core';
-import { setTheme } from 'ngx-bootstrap/utils';
-import { EstadoService } from './services/estado.service';
+import { EstadoService } from './services/estado/estado.service';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,13 @@ import { EstadoService } from './services/estado.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  public titulo:string = "Angular Calculadora";
   public  mostrarSobre:any;
  
 
   constructor(mostrar: EstadoService) {
-    setTheme('bs4');
+    
     effect(()=>{
       this.mostrarSobre = mostrar.mostrarSobre();
-      console.log(mostrar.getMostrarSobre());
     })
 
   }
