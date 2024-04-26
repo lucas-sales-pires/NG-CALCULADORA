@@ -11,6 +11,6 @@ export class BotaoifComponent {
 
   }
   abrir(){
-    this.mostrar.setMostrarSobreTrue();
+    this.mostrar.setMostrarSobre();
   }
 }
