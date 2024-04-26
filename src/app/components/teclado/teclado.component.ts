@@ -31,7 +31,7 @@ export class TecladoComponent implements OnInit {
   }
 
   public avaliaResultado(){
-    this.resultado = this.resultado +"";
+    this.resultado = eval(this.resultado +"");
   }
 }
 

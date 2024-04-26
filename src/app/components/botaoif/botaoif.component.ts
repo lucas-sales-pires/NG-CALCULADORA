@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, effect } from '@angular/core';
 import { EstadoService } from 'src/app/services/estado.service';
 
 @Component({
@@ -7,10 +7,18 @@ import { EstadoService } from 'src/app/services/estado.service';
   styleUrl: './botaoif.component.css'
 })
 export class BotaoifComponent {
+condicao: any;
   constructor(private mostrar: EstadoService){
-
-  }
+    effect(()=>{
+      if(!this.mostrar.getMostrarSobre()){
+        this.condicao = "Abrir";
+      }else{
+        this.condicao = "Fechar";
+      }
+    }
+    )}
   abrir(){
     this.mostrar.setMostrarSobre();
   }
+
 }

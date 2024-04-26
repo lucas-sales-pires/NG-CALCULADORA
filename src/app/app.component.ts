@@ -9,14 +9,14 @@ import { EstadoService } from './services/estado.service';
 })
 export class AppComponent {
   public titulo:string = "Angular Calculadora";
-  mostrarSobre:any;
+  public  mostrarSobre:any;
  
 
   constructor(mostrar: EstadoService) {
     setTheme('bs4');
     effect(()=>{
-      mostrar.getMostrarSobre();
-      this.mostrarSobre = mostrar.getMostrarSobre();
+      this.mostrarSobre = mostrar.mostrarSobre();
+      console.log(mostrar.getMostrarSobre());
     })
 
   }

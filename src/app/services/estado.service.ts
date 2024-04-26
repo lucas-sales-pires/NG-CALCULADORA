@@ -9,12 +9,10 @@ export class EstadoService {
 
 
   constructor() { }
-  setMostrarSobre(){
-    if(this.mostrarSobre() == false){
-      this.mostrarSobre.set(true);
-    }
-    this.mostrarSobre.set(false);
+  setMostrarSobre() {
+    this.mostrarSobre.set(!this.mostrarSobre()); // Alternar o valor de mostrarSobre
   }
+
   getMostrarSobre(){
     return this.mostrarSobre();
   }

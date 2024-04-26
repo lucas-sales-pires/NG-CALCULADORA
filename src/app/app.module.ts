@@ -12,11 +12,11 @@ import { BotaoifComponent } from './components/botaoif/botaoif.component';
     AppComponent,
     TecladoComponent,
     SobreComponent,
-    BotaoifComponent
+    BotaoifComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
