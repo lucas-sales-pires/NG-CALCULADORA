@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TecladoComponent } from './teclado/teclado.component';
-import { SobreComponent } from './sobre/sobre.component';
+import { TecladoComponent } from './components/teclado/teclado.component';
+import { SobreComponent } from './components/sobre/sobre.component';
+import { BotaoifComponent } from './components/botaoif/botaoif.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TecladoComponent,
-    SobreComponent
+    SobreComponent,
+    BotaoifComponent
   ],
   imports: [
     BrowserModule,

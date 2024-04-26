@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { setTheme } from 'ngx-bootstrap/utils';
-import { ValidacaoService } from '../validacao.service';
+import { ValidacaoService } from '../../validacao.service';
 
 
 @Component({

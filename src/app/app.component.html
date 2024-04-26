@@ -5,7 +5,8 @@
 <hr>
 <div id="corpo">
   <app-teclado></app-teclado>
-  <ion-button class="primary-button">b</ion-button>
-  <app-sobre></app-sobre>
+  <app-botaoif></app-botaoif>
+
+  <app-sobre [ngif] = "mostrar"></app-sobre>
 </div>
 <hr>
