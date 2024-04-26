@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { setTheme } from 'ngx-bootstrap/utils';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-base-v17';
+  public titulo:string = "Angular Calculadora";
+ 
+
+  constructor() {
+    setTheme('bs4');
+
+  }
+
 }
+
