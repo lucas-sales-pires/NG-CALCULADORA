@@ -16,6 +16,7 @@ export class AppComponent {
     setTheme('bs4');
     effect(()=>{
       mostrar.mostrarSobre();
+      console.log(this.mostrarSobre)
     })
 
   }
