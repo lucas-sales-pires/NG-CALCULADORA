@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-base-v17'`, () => {
+  it(`should have as title 'NG-CALCULADORA'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-base-v17');
+    expect(app.title).toEqual('NG-CALCULADORA');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-base-v17');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('NG-CALCULADORA app is running!');
   });
 });
