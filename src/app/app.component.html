@@ -5,6 +5,9 @@
 <hr>
 <div id="corpo">
   <app-teclado></app-teclado>
-  <app-sobre></app-sobre>
+  <button (click)="estadoService.setMostrarSobreTrue()">Mostrar Sobre</button>
+
+  <app-sobre *ngIf="estadoService.mostrarSobre">...</app-sobre>
+  
 </div>
 <hr>

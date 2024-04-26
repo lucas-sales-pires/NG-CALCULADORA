@@ -8,6 +8,7 @@ import { setTheme } from 'ngx-bootstrap/utils';
 })
 export class AppComponent {
   public titulo:string = "Angular Calculadora";
+  mostrarSobre = false;
  
 
   constructor() {
