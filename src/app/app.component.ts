@@ -12,7 +12,7 @@ export class AppComponent {
   mostrarSobre:any;
  
 
-  constructor( mostrar: EstadoService) {
+  constructor(mostrar: EstadoService) {
     setTheme('bs4');
     effect(()=>{
       mostrar.getMostrarSobre();
