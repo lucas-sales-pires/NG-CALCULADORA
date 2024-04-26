@@ -1,27 +1,35 @@
-# AngularBaseV17
+# Calculadora - Trabalho de Faculdade
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+Este projeto é uma calculadora desenvolvida como parte de um trabalho para a disciplina de Análise e Desenvolvimento de Sistemas na faculdade. A calculadora foi desenvolvida utilizando o framework [Angular](https://angular.io/), uma plataforma de desenvolvimento de aplicativos da web em JavaScript.
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A calculadora é uma aplicação web que permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão. Ela foi desenvolvida utilizando a linguagem de programação [TypeScript](https://www.typescriptlang.org/) e o framework Angular.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Adição de números
+- Subtração de números
+- Multiplicação de números
+- Divisão de números
 
-## Build
+## Requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Navegador web moderno compatível com o framework Angular
 
-## Running unit tests
+## Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone este repositório em sua máquina local.
+2. Abra o projeto em seu editor de código preferido.
+3. Abra um terminal na pasta raiz do projeto.
+4. Execute o comando `npm install` para instalar as dependências do projeto.
+5. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+6. Abra o navegador e acesse `http://localhost:4200` para visualizar a calculadora.
 
-## Running end-to-end tests
+## Contribuição
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão, sinta-se à vontade para abrir uma [issue](https://github.com/seu-usuario/seu-repositorio/issues) ou enviar um [pull request](https://github.com/seu-usuario/seu-repositorio/pulls).
 
-## Further help
+## Licença
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
