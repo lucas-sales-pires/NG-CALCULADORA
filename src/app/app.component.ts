@@ -15,7 +15,8 @@ export class AppComponent {
   constructor( mostrar: EstadoService) {
     setTheme('bs4');
     effect(()=>{
-      mostrar.mostrarSobre();
+      mostrar.getMostrarSobre();
+      this.mostrarSobre = mostrar.getMostrarSobre();
     })
 
   }
