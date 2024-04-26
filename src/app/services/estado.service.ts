@@ -9,8 +9,15 @@ export class EstadoService {
 
 
   constructor() { }
-  setMostrarSobreTrue(){
-    this.mostrarSobre.set(true);
+  setMostrarSobre(){
+    if(this.mostrarSobre() == false){
+      this.mostrarSobre.set(true);
+    }
+    this.mostrarSobre.set(false);
+  }
+  getMostrarSobre(){
+    return this.mostrarSobre();
   }
   
+
 }
