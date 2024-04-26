@@ -1,5 +1,6 @@
-import { Component} from '@angular/core';
+import { Component, effect} from '@angular/core';
 import { setTheme } from 'ngx-bootstrap/utils';
+import { EstadoService } from './services/estado.service';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,11 @@ export class AppComponent {
   mostrarSobre = false;
  
 
-  constructor() {
+  constructor( mostrar: EstadoService) {
     setTheme('bs4');
+    effect(()=>{
+      mostrar.mostrarSobre();
+    })
 
   }
 
