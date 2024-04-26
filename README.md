@@ -1,6 +1,6 @@
 # Calculadora - Trabalho de Faculdade
 
-Este projeto é uma calculadora desenvolvida como parte de um trabalho para a disciplina de Análise e Desenvolvimento de Sistemas na faculdade. A calculadora foi desenvolvida utilizando o framework [Angular](https://angular.io/), uma plataforma de desenvolvimento de aplicativos da web em JavaScript.
+Este projeto é uma calculadora desenvolvida como parte de um trabalho para a disciplina de Análise e Desenvolvimento de Sistemas na faculdade. A calculadora foi desenvolvida utilizando o framework [Angular](https://angular.io/), uma plataforma de desenvolvimento de aplicativos da web utilizando typescript.
 
 ## Descrição
 
